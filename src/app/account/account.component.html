@@ -1,0 +1,76 @@
+<div class="container" style="margin-top: 30px;">
+    <h1><strong>My Account</strong></h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-sm-4 offset-2" style="padding: 50px;">
+            <h3><strong>Sign in</strong></h3>
+            <form #ref=ngForm (ngSubmit)="sendData(ref)" style="margin-top: 30px;">
+                <div class="form-group">
+                    
+                    <input type="text" name="username" class="form-control" ngModel required #ref1="ngModel"  placeholder=" Username">
+                </div>
+                <div *ngIf="ref1.touched && ref1.invalid" class="alert alert-danger">
+                    *username is required
+                </div>
+                <div class="form-group" style="margin-top: 30px;">
+                    <input type="password" name="Password" pattern="[abc]\d." class="form-control" ngModel required #ref2="ngModel" placeholder="Password">
+                </div>
+                <div *ngIf="ref2.invalid && (ref2.dirty || ref2.touched)" class="alert alert-danger">
+                    <div *ngIf="ref2.errors?.required">
+                        Password must required
+                    </div>
+                    <div *ngIf="ref2.errors?.pattern">
+                        pattern is not matched
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 30px;">
+                    <button type="submit" class="btn btn-success">Login </button>
+                </div>
+                <p style="margin-top: 30px; text-align: center;"><a href="#"><strong>Forgot your password?</strong></a></p>
+                <hr>
+                <div class="text-center" style="margin-top: 30px;">
+                    <button type="submit" class="btn btn-info"><i class="fab fa-facebook"></i>SIGN IN</button>
+                    <button type="submit" class="btn btn-dark" style="margin-left: 50px;"><i class="fab fa-apple"></i>SIGN IN</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4 offset-1 bg-light" style="padding: 50px;">
+            <h3><strong>Create an Account</strong></h3>
+            <form #ref=ngForm (ngSubmit)="sendData(ref)" style="margin-top: 30px;">
+                <div class="form-group">
+                    
+                    <input type="email" name="email" class="form-control" ngModel required #ref3="ngModel"  placeholder="Email">
+                </div>
+                <div *ngIf="ref3.touched && ref3.invalid" class="alert alert-danger">
+                    *Email is required
+                </div>
+                <div class="form-group" style="margin-top: 30px;">
+                    <input type="text" name="username" class="form-control" ngModel required #ref4="ngModel" placeholder="Username">
+                </div>
+                <div *ngIf="ref4.touched && ref4.invalid" class="alert alert-danger">
+                    *Username is required
+                </div>
+                <div class="form-group" style="margin-top: 30px;">
+                    <input type="email" name="password" pattern="[abc]\d." class="form-control" ngModel required #ref5="ngModel" placeholder="Password">
+                </div>
+                <div *ngIf="ref5.invalid && (ref5.dirty || ref5.touched)" class="alert alert-danger">
+                    <div *ngIf="ref5.errors?.required">
+                        Password must required
+                    </div>
+                    <div *ngIf="ref5.errors?.pattern">
+                        pattern is not matched
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 30px;">
+                    <button type="submit" class="btn btn-outline-info">CREATE ACCOUNT </button>
+                </div>
+                <p style="margin-top: 30px; ">By clicking "Create Account" you agree to the Bodybuilding.com<a href="#">Terms of Use</a>and <a href="#">Privacy Policy</a></p>
+                <hr>
+                <div class="text-center" style="margin-top: 30px;">
+                    <button type="submit" class="btn btn-info"><i class="fab fa-facebook"></i>SIGN UP</button>
+                    <button type="submit" class="btn btn-dark" style="margin-left: 50px;"><i class="fab fa-apple"></i>SIGN UP</button>
+                </div>
+                <p style="margin-top: 30px;">We will never post to Facebook without permission.</p>
+            </form>
+        </div>
+    </div>
+</div>

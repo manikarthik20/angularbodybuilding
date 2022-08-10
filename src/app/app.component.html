@@ -1,0 +1,160 @@
+<div class="container-fluid bg-light">
+  <div class="row">
+    <ul class="nav nav-fill ">
+    <div class="col-sm-1">
+      <li class="nav-item">
+      <a routerLink="#" class="nav-link active"><img src="assets/img/logo3.png" alt="logo1" width="100px" height="100px"></a>
+    </li>
+    </div>
+    <form class="form-inline col-sm-3.5 " style="margin-left:40px;">
+        <input type="text" class="form-control mr-sm-2" placeholder="Search" >
+        <button class="btn btn-success " type="button">Search</button>
+    </form>
+    <div class="col-sm-1 ">
+      <li class="nav-item">
+        <a routerLink="/salesspecials" class="nav-link" style="margin-top: 20px; color: #000;"><i class="fas fa-tag"  style="color: blue; margin-right: 3px;"></i>Sales-Specials</a>
+      </li>
+    </div>
+    <div class="col-sm-1">
+      <li class="nav-item">
+        <a routerLink="/topproducts" class="nav-link" style="margin-top: 20px; color: #000;"><i class="fas fa-trophy"  style="color: blue; margin-right: 3px;"></i>Top-Products</a>
+      </li>
+    </div>
+    <div class="col-sm-1 ">
+      <li class="nav-item">
+        <a routerLink="/newtrending" class="nav-link" style="margin-top: 20px; color: #000;" ><i class="fas fa-tint" style="color:blue; margin-right: 3px;"></i>New-Trending</a>
+      </li>
+    </div>
+    <div class="col-sm-1 ">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="margin-top: 25px;" data-toggle="dropdown" routerLink="#"><img src="assets/img/flag.svg" alt="flag" width="50%"></a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="#"><img src="assets/img/us.svg" alt="ca" width="20%">United States</a>
+          <a class="dropdown-item" routerLink="#"><img src="assets/img/ca.svg" alt="ca" width="20%"> Canada</a>
+          <a class="dropdown-item" routerLink="#"><img src="assets/img/jp.svg" alt="ca" width="20%">Japan</a>
+          <a class="dropdown-item" routerLink="#"><img src="assets/img/au.svg" alt="ca" width="20%">Australia</a>
+          <a class="dropdown-item" routerLink="#"><img src="assets/img/flag.svg" alt="ca" width="20%">India</a>
+          <a class="dropdown-item" routerLink="#"><img src="assets/img/ru.svg" alt="ca" width="20%">Russia</a>
+          <a class="dropdown-item" routerLink="#"><img src="assets/img/br.svg" alt="ca" width="20%">Brazil</a>
+          <a class="dropdown-item" routerLink="#"><img src="assets/img/il.svg" alt="ca" width="20%">Israel</a>
+        </div>
+      </li>
+    </div>
+    <div class="col-sm-1 ">
+      <li class="nav-item">
+        <a routerLink="/account" class="nav-link" style="margin-top: 20px; color: #000;"><i class="fas fa-user"  style="color: blue; "></i>Account</a>
+      </li>
+    </div>
+    <div class="col-sm-1 ">
+      <li class="nav-item">
+        <a routerLink="/cart" class="nav-link" style="margin-top: 20px; color: #000; "><i class="fas fa-cart-plus" style="color: blue; margin-right: 3px;"></i>Cart</a>
+      </li>
+    </div>
+  </ul>
+  </div>
+  <div class="row">
+    <ul class="nav nav-tabs ">
+      
+      <li class="nav-item">
+        <a routerLink="/home" class="nav-link" style="color: #000; margin-bottom: 10px; margin-left: 30px;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/protine" class="nav-link" style="color: #000; margin-bottom: 10px;">Protine</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a routerLink="/performance" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: #000; margin-bottom: 10px;">Performance</a>
+        <div class="dropdown-menu">
+          <a  class="dropdown-item" routerLink="performance/img"><img src="assets/img/bulkbody.jpg" alt="bulk" width="100%">
+            <p style="text-align: center;">Bulk-Body</p>
+          </a>
+            <a  class="dropdown-item" routerLink="performance/img3"><img src="assets/img/abs.jpg" alt="bulk" width="100%">             
+                <p style="text-align: center;">SixPack-Abs</p>           
+              </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/weightmanagement" class="nav-link" style="color: #000; margin-bottom: 10px;">Weight-Management</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/vitaminshealth" class="nav-link" style="color: #000; margin-bottom: 10px;">Vitamins-Health</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/clothingaccessories" class="nav-link" style="color: #000; margin-bottom: 10px;">Clothing-Accessories</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/joinbodyfit" class="nav-link"><strong>Join-BodyFit</strong></a>
+      </li>
+    </ul>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  <div class="d-flex flex-column h-100">
+
+    <!-- FOR DEMO PURPOSE -->
+    
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0" style="margin-top: 50px;">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="small text text-white mb-3">NEED HELP?</h5>
+                    <p class="small text-muted mb-0"><a routerLink="#">Help Center</a></p>
+                    <p class="small text-muted mb-0"><a  routerLink="#">Email Support</a></p>
+                    <p class="small text-muted mb-0"><a routerLink="#">Live Chat</a></p>
+                    <p class="small text-muted mb-0"><a  routerLink="#">Send Us Feedback</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="small text- text-white mb-3">ORDERS & SHIPPING</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="small text-muted mb-0"><a routerLink="#">Order Status</a></li>
+                        <li class="small text-muted mb-0"><a routerLink="#">Returns/Exchange</a></li>
+                        <li class="small text-muted mb-0"><a routerLink="#">Shipping Support</a></li>
+                        <li class="small text-muted mb-0 nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"  data-toggle="dropdown" href="#"><img src="assets/img/flag.svg" alt="flag" width="15%">India</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" routerLink="#"><img src="assets/img/us.svg" alt="ca" width="15%">United States</a>
+                              <a class="dropdown-item" routerLink="#"><img src="assets/img/ca.svg" alt="ca" width="15%"> Canada</a>
+                              <a class="dropdown-item" routerLink="#"><img src="assets/img/jp.svg" alt="ca" width="15%">Japan</a>
+                              <a class="dropdown-item" routerLink="#"><img src="assets/img/au.svg" alt="ca" width="15%">Australia</a>
+                              <a class="dropdown-item" routerLink="#"><img src="assets/img/flag.svg" alt="ca" width="15%">India</a>
+                              <a class="dropdown-item" routerLink="#"><img src="assets/img/ru.svg" alt="ca" width="15%">Russia</a>
+                              <a class="dropdown-item" routerLink="#"><img src="assets/img/br.svg" alt="ca" width="15%">Brazil</a>
+                              <a class="dropdown-item" routerLink="#"><img src="assets/img/il.svg" alt="ca" width="15%">Israel</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="small text text-white mb-3">CONNECT WITH US</h5>
+                    <ul class="list-unstyled text-muted">
+                        <a routerLink="#" ><img src="./assets/img/facebook.svg" alt="facebook" width="10%"></a>
+                        <a routerLink="#" style="margin-left: 5px;"><img src="./assets/img/youtube.svg" alt="youtube" width="10%" ></a>
+                        <a routerLink="#" style="margin-left: 5px;"><img src="./assets/img/twitter.svg" alt="twitter" width="10%" ></a>
+                        <a routerLink="#" style="margin-left: 5px;"><img src="./assets/img/pinterest.svg" alt="pinterest" width="10%" ></a>
+                        <a routerLink="#" style="margin-left: 5px;"><img src="./assets/img/instagram.svg" alt="instagram" width="10%" ></a>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="small text text-white mb-3">JOIN OUR NEWSLETTER</h5>
+                    <p class="small text-muted">Be the first to receive exciting news,features,and special offers from Bodybuilding.com!</p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4">
+          <P class="text-muted">Careers | Terms of Use | Privacy Policy | CA Supply Chain Act | Accessibility Statemant | About Us | Site Map | Affiliates | Privacy Setting | Help</P>
+        </div>
+        <p class="small text-muted"  style=" text-align: center;">© 2021 Bodybuilding.com. All rights reserved. Bodybuilding.com℠ and BodySpace® are trademarks of Bodybuilding.com.</p>
+        <p class="small text-muted" style="text-align: center;">Always consult with a qualified healthcare professional prior to beginning any diet or exercise program or</p>
+        <p class="small text-muted" style="text-align: center;">taking any dietary supplement. The content on our website is for informational and educational purposes only</p>
+        <p class="small text-muted" style="text-align: center;">and is not intended as medical advice or to replace a relationship with a qualified healthcare professional.</p>
+        <p class="small text-muted" style="text-align: center;">Bodybuilding.com5777 N Meeker Ave, Boise, ID 83713-1520 USA  1-866-236-8417</p>
+    </footer>
+</div>
+  
